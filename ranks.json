@@ -1,0 +1,164 @@
+{
+	"ranks": [
+		{
+			"id": "default",
+			"name": "default",
+			"flair": "&7",
+			"web_display": false,
+			"staff": false,
+			"permissions": [
+				"node.none"
+			]
+		},
+		{
+			"id": "d1",
+			"name": "Athena",
+			"flair": "&b[Athena] ",
+			"web_display": true,
+			"staff": false,
+			"parent": "default",
+			"permissions": [
+				"game.extra"
+				"game.skyblock.extra",
+				"command.skull"
+				"rank.d1"
+			]
+		},
+		{
+			"id": "d2",
+			"name": "Zeus",
+			"flair": "&a[Zeus] ",
+			"web_display": true,
+			"staff": false,
+			"parent": "vip",
+			"permissions": [
+				"rank.d2"
+				"command.skull"
+			]
+		},
+		{
+			"id": "d3",
+			"name": "Poseidon",
+			"flair": "&6[Poseidon] ",
+			"web_display": true,
+			"staff": false,
+			"parent": "pro",
+			"permissions": [
+				"command.megaphone"
+				"rank.d3"
+			]
+		},
+		{
+			"id": "heart",
+			"name": "❤",
+			"flair": "&4❤ ",
+			"web_display": true,
+			"staff": false,
+			"parent": "d3"
+		},
+		{
+			"id": "jnr_moderator",
+		  	"name": "Jr.Mod",
+			"flair": "&e[Jr.Mod] ",
+			"web_display": false,
+			"staff": true,
+			"parent": "heart",
+			"permissions": [
+				"punish.menu",
+				"lobby.setspawn",
+				"AAC.notify",
+				"core.punish.kick",
+				"core.punish.mute",
+				"nocheatplus.notify",
+				"nocheatplus.command.notify",
+				"bungeecord.command.server",
+				"bungeecord.command.send",
+				"lobby.reset",
+				"punish.use",
+				"staff.chat",
+				"cardinal.loadmaps",
+				"cardinal.match.cycle",
+				"cardinal.match.setnext",
+				"cardinal.cancel",
+				"cardinal.match.start",
+				"cardinal.match.end",
+				"cardinal.whitelist.*",
+				"cardinal.teleport",
+				"worldedit.*",
+				"core.punish.*",
+				"nocheat.admin",
+				"AAC.admin",
+				"AAC.*",
+				"AAC.unban",
+				"minecraft.command.teleport",
+				"bukkit.command.teleport",
+				"worldguard.*",
+				"minecraft.command.time",
+				"minecraft.command.tp",
+				"bukkit.command.tp",
+				"bukkit.command.time",
+				"minecraft.command.gamerule",
+				"bukkit.command.gamerule",
+				"minecraft.command.toggledownfall",
+				"bukkit.command.toggledownfall",
+				"cloud.togglechat.bypass",
+				"chatfilter.bypass"
+			]
+		},
+		{
+			"id": "Moderator",
+		  	"name": "Mod",
+			"flair": "&e[Mod] ",
+			"web_display": false,
+			"staff": true,
+			"parent": "jnr_moderator",
+			"permissions": [
+				"cloud.serverinfo",
+				"cloud.check-ip"
+			]
+		},
+		{
+			"id": "Snr_Moderator",
+		  	"name": "Sr.Mod",
+			"flair": "&e[Sr.Mod] ",
+			"web_display": false,
+			"staff": true,
+			"parent": "moderator",
+			"permissions": [
+				"cloud.togglechat",
+				"cloud.hidepunishments",
+				"cloud.servername",
+				"bungeecord.command.ip",
+				"bungeecord.command.alert",
+				"bukkit.command.gamemode"
+			]
+		},
+		{
+			"id": "admin",
+			"name": "Administrator",
+			"flair": "&c[Admin] ",
+			"web_display": true,
+			"staff": true,
+			"parent": "snr_moderator",
+			"permissions": [
+				"bungeecord.command.*",
+				"pservers.set",
+				"core.setrank",
+				"cloud.setrank",
+			]
+		}
+			"id": "owner",
+			"name": "Owner",
+			"flair": "&c[Owner] ",
+			"web_display": true,
+			"staff": true,
+			"parent": "admin",
+			"permissions": [
+				"bungeecord.command.*",
+				"pservers.set",
+				"core.setrank",
+				"cloud.setrank",
+			]
+		}
+	]
+}
