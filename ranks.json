@@ -145,20 +145,5 @@
 				"pservers.set",
 				"core.setrank",
 				"cloud.setrank",
-			]
-		}
-			"id": "owner",
-			"name": "Owner",
-			"flair": "&c[Owner] ",
-			"web_display": true,
-			"staff": true,
-			"parent": "admin",
-			"permissions": [
-				"bungeecord.command.*",
-				"pservers.set",
-				"core.setrank",
-				"cloud.setrank",
-			]
-		}
 	]
 }
